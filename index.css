@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&family=Nunito:wght@600&family=Work+Sans:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Markazi Text', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    text-align: right;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    width: 100%;
+}
+
+.container > p {
+    direction: rtl;
+    width: 50%;
+    margin: 40px auto;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #0808;
+}
+
+
+
+
+
+.info h3{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #325ea8;
+    font-size: 25px;
+}
+
+.red {
+    color: #4632a8;
+
+}
+
+.user {
+    display: block;
+    color: #4632a8;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.active {
+    display: block !important;
+}
+
+.info p {
+    background-color: aliceblue;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 17px;
+    display: none;
+}
+
+svg {
+    transition: .3s;
+}
+.rotate{
+    transform: rotate(-90deg) !important;
+}
+
+
+
+    @media (max-width: 500px) {
+        .info p {
+            width: 100%;
+            padding: 5px;
+            line-height: 30px;
+            font-size: 17px;
+        }
+}
+
+.icons {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+i:hover {
+    color: #041e42;
+    color: #3240a8;
+
+}
+
+a i {
+    text-decoration: none;
+    color: none;
+    color: #041e42;
+    transition: .3s;
+
+}
+
+
+
+/* start contact */
+
+
+.contact .info {
+    background-color: #041e42;
+    padding: 10px 80px;
+    /* height: 10vh; */
+}
+
+.contact .info p {
+    font-weight: 400;
+    color: #FFF;
+}
+
+.contact .info p a {
+    color: red;
+}
+
+#contact {
+    background-position: top 75% right 0;
+    /* background-image: url(images/R.jfif); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041e42;
+    padding: 80px;
+    margin: 30px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.36);
+}
+
+
+
+#contact .form{
+    padding: 0 80px;
+}
+
+#contact .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+#contact .form form input,
+#contact .form form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 6px 0;
+    border: 1px solid #e1e1e1;
+    outline: none;
+}
+
+#contact .form form #btn {
+    width: 20%;
+    padding: 6px;
+    background-color: #327da8;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px auto;
+    transition: .3s;
+}
+/* end contact */
+
+#contact .form form #btn:hover {
+    background-color: #42aaf5;
+
+    /* background-color: #327da8; */
+}
+
+@media (max-width: 799px) {
+    .container > p {
+        margin: 20px 0;
+        line-height: 40px;
+        font-size: 20px;
+        padding: 20px;
+        width: 100%;
+        background-color: #0808;
+    }
+.info span {
+    width: 100%;
+}
+
+/* contact */
+
+.contact .info {
+    background-color: #041e42;
+    padding: 20px 10px;
+    /* height: 10vh; */
+}
+
+.contact .info p {
+    margin-top: 20px;
+}
+
+#contact {
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.36);
+}
+
+#contact .form{
+    padding: 0 20px;
+}
+
+form {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
